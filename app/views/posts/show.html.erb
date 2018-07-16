@@ -1,0 +1,13 @@
+<h1><%= @post.title %></h1>
+<div><%= @post.body.html_safe %></div>
+<%= link_to "Edit Post", edit_post_path(@post) %>
+<%= link_to "Delete Post", post_path(@post), method: :delete, data: { confirm: "Are you sure?"} %>
+
+<!-- <% r = 'sdflsdffl' %>
+<%= r %>
+
+<% if r.length == 0 %>
+	<p>r exists: <%= r %></p>
+<% else %>
+	<p>r does not exist</p> -->
+<% end %>
